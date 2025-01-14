@@ -41,7 +41,13 @@ function render() {
 
 function addFreelancer() {
   if (newFreelancers.length > 0) {
-    const freelancer = newFreelancers.shift();
+    let freelancer;
+    if (freelancers.some((f) => f.name === "Carol")) {
+      const randomIndex = Math.floor(Math.random() * newFreelancers.length);
+      freelancer = newFreelancers.splice(randomIndex, 1)[0];
+    } else {
+      freelancer = newFreelancers.shift();
+    }
     freelancers.push(freelancer);
     render();
   }
