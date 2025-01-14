@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: white;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  color: black;
+  background-color: antiquewhite;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  border: 1px solid wheat;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+#averagePrice {
+  margin-top: 20px;
+  font-size: 18px;
+  color: black;
+  background-color: white;
+}
